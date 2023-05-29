@@ -70,11 +70,11 @@ export default function Home() {
       </div>
       <footer className="my-10">
         <div className="w-100 flex justify-center">
-          <hr className="h-0.5 my-8 bg-gray-300 w-1/2" />
+          <hr className="h-0.5 my-8 bg-blue-200 w-1/2 rounded" />
         </div>
         <ul className="flex justify-center" id="social">
           <li className="mx-5">
-            <a className={styles.link} href="https://twitter.com/ubaz_3">
+            <a href="https://twitter.com/ubaz_3">
               <FontAwesomeIcon icon={faTwitter} />
             </a>
           </li>
