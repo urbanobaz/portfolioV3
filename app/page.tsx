@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import Head from 'next/head';
 import { Quicksand } from 'next/font/google';
@@ -11,9 +12,9 @@ import {
   faTwitter,
 } from '@fortawesome/free-brands-svg-icons';
 
-const quicksand = Quicksand({ subsets: ['latin'] });
-
 export default function Home() {
+  const today = new Date();
+  const year = today.getFullYear();
   return (
     <>
       <Head>
@@ -21,69 +22,69 @@ export default function Home() {
         <meta name="description" content="Urbano's portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <main className={quicksand.className}>
-        <div className={styles.content}>
-          <aside className={styles.side}>
-            <Image
-              id="pictureImage"
-              className={styles['picture-image']}
-              src={headshot}
-              alt="Portrait of Urbano Baz"
-            />
-          </aside>
-          <main className={styles.about}>
-            <h1 className={styles.name}>Hi, I'm Urbano Baz</h1>
-            <p className={styles.job}>Software Engineer</p>
-            <hr className={styles.hr} />
-            <div className={styles.description}>
-              <p>
-                I am a software engineer and instructor who loves creating UIs
-                with React.
-              </p>
-            </div>
-            <div className={styles.contact}>
-              <a className={styles.button} href="mailto:urbanobaz@yahoo.com">
-                Get in touch
+      <div className={styles.content}>
+        <aside className={styles.side}>
+          <Image
+            id="pictureImage"
+            className={styles['picture-image']}
+            src={headshot}
+            alt="Portrait of Urbano Baz"
+          />
+        </aside>
+        <main className={styles.about}>
+          <h1 className={styles.name}>Hi, I'm Urbano Baz</h1>
+          <hr className={styles.hr} />
+          <div className={styles.description}>
+            <p>
+              I am a software engineer and instructor who loves creating UIs
+              with React.
+            </p>
+          </div>
+          <div className={styles.contact}>
+            <a className={styles.button} href="mailto:urbanobaz@yahoo.com">
+              Get in touch
+            </a>
+          </div>
+          <ul className={styles.social} id="social">
+            <li>
+              <a className={styles.link} href="https://twitter.com/ubaz_3">
+                <FontAwesomeIcon icon={faTwitter} />
               </a>
-            </div>
-            <ul className={styles.social} id="social">
-              <li>
-                <a className={styles.link} href="https://twitter.com/ubaz_3">
-                  <FontAwesomeIcon icon={faTwitter} />
-                </a>
-              </li>
-              <li>
-                <a className={styles.link} href="https://github.com/urbanobaz">
-                  <i className="fab fa-github"></i>
-                  <FontAwesomeIcon icon={faGithub} />
-                </a>
-              </li>
-              <li>
-                <a
-                  className={styles.link}
-                  href="https://www.linkedin.com/in/urbanobaz"
-                >
-                  <FontAwesomeIcon icon={faLinkedinIn} />
-                </a>
-              </li>
-            </ul>
-          </main>
+            </li>
+            <li>
+              <a className={styles.link} href="https://github.com/urbanobaz">
+                <i className="fab fa-github"></i>
+                <FontAwesomeIcon icon={faGithub} />
+              </a>
+            </li>
+            <li>
+              <a
+                className={styles.link}
+                href="https://www.linkedin.com/in/urbanobaz"
+              >
+                <FontAwesomeIcon icon={faLinkedinIn} />
+              </a>
+            </li>
+          </ul>
+        </main>
+      </div>
+      <footer className="my-10">
+        <div className="w-100 flex justify-center">
+          <hr className="h-0.5 my-8 bg-gray-300 w-1/2" />
         </div>
-      </main>
-      <footer>
-        <ul className={styles.social} id="social">
-          <li>
+        <ul className="flex justify-center" id="social">
+          <li className="mx-5">
             <a className={styles.link} href="https://twitter.com/ubaz_3">
               <FontAwesomeIcon icon={faTwitter} />
             </a>
           </li>
-          <li>
+          <li className="mx-5">
             <a className={styles.link} href="https://github.com/urbanobaz">
               <i className="fab fa-github"></i>
               <FontAwesomeIcon icon={faGithub} />
             </a>
           </li>
-          <li>
+          <li className="mx-5">
             <a
               className={styles.link}
               href="https://www.linkedin.com/in/urbanobaz"
@@ -92,6 +93,9 @@ export default function Home() {
             </a>
           </li>
         </ul>
+        <p className="flex justify-center mt-5">
+          &copy; {year} Urbano Baz. All rights reserved.
+        </p>
       </footer>
     </>
   );

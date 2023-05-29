@@ -99,7 +99,7 @@
 }
 
 .description {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 .contact {
@@ -194,7 +194,6 @@
 }
 
 .card {
-  /* Add shadows to create the "card" effect */
   border: 1px solid rgba(0, 0, 0, 0.2);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
@@ -210,7 +209,6 @@
   padding: 0 4rem;
 }
 
-/* On mouse-over, add a deeper shadow */
 .card:hover,
 .picture-image:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
@@ -223,7 +221,6 @@
   transition: 0.1s;
 }
 
-/* Add some padding inside the card container */
 .container {
   padding: 2px 16px;
 }
@@ -236,7 +233,6 @@
 
 .link-container {
   min-height: 100vh;
-  /* max-width: 1080px; */
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -285,7 +281,7 @@
   font-size: 0.9rem;
 }
 
-/* 4. Responsiveness */
+/* Responsiveness */
 
 @media screen and (max-width: 849px) {
   .content {
