@@ -73,22 +73,19 @@ export default function Home() {
           <hr className="h-0.5 my-8 bg-blue-200 w-1/2 rounded" />
         </div>
         <ul className="flex justify-center" id="social">
-          <li className="mx-5">
+          <li className={styles.socialLink}>
             <a href="https://twitter.com/ubaz_3">
               <FontAwesomeIcon icon={faTwitter} />
             </a>
           </li>
-          <li className="mx-5">
-            <a className={styles.link} href="https://github.com/urbanobaz">
+          <li className={styles.socialLink}>
+            <a href="https://github.com/urbanobaz">
               <i className="fab fa-github"></i>
               <FontAwesomeIcon icon={faGithub} />
             </a>
           </li>
-          <li className="mx-5">
-            <a
-              className={styles.link}
-              href="https://www.linkedin.com/in/urbanobaz"
-            >
+          <li className={styles.socialLink}>
+            <a href="https://www.linkedin.com/in/urbanobaz">
               <FontAwesomeIcon icon={faLinkedinIn} />
             </a>
           </li>
