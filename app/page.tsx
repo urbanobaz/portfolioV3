@@ -69,7 +69,7 @@ export default function Home() {
         </main>
       </div>
       <div className="flex justify-center mt-20">
-        <div className="left-0 w-1/2 ">
+        <div className="left-0 w-11/12 md:w-1/2">
           <h3 className="flex flex-col text-xl font-semibold mb-5">Projects</h3>
           <ul className="flex flex-col list-disc ml-6">
             <Link href={'/projects/1'}>
@@ -81,7 +81,7 @@ export default function Home() {
       </div>
 
       <section className="flex justify-center mt-20">
-        <div className="left-0 w-1/2">
+        <div className="left-0 w-11/12 md:w-1/2">
           <h3 className="text-xl font-semibold mb-5">Who am I?</h3>
           <p className="mb-2">
             Based in <strong>Miami</strong>, went to{' '}
