@@ -68,17 +68,38 @@ export default function Home() {
           </ul>
         </main>
       </div>
-      <h3 className="mt-10 mb-5 flex justify-center text-xl font-semibold">
-        Projects
-      </h3>
-      <div className="flex justify-center">
-        <ul className="flex flex-col left-0 w-1/2 list-disc">
-          <Link href={'/projects/1'}>
-            <li>Books & More</li>
-          </Link>
-          <li>Portfolio</li>
-        </ul>
+      <div className="flex justify-center mt-20">
+        <div className="left-0 w-1/2 ">
+          <h3 className="flex flex-col text-xl font-semibold mb-5">Projects</h3>
+          <ul className="flex flex-col list-disc ml-6">
+            <Link href={'/projects/1'}>
+              <li>Books & More</li>
+            </Link>
+            <li>Portfolio</li>
+          </ul>
+        </div>
       </div>
+
+      <section className="flex justify-center mt-20">
+        <div className="left-0 w-1/2">
+          <h3 className="text-xl font-semibold mb-5">Who am I?</h3>
+          <p className="mb-2">
+            Based in <strong>Miami</strong>, went to{' '}
+            <strong>Florida State University</strong> for Finance and
+            Management. Fell in love with computer science when I took{' '}
+            <strong>CS50x</strong> at <strong>Miami Dade College</strong> back
+            in 2018 and didn't look back. I couldn't get enough of what I was
+            learning and the things I was building.
+          </p>
+          <p>
+            A year of learning lead me back to where it all started, with{' '}
+            <strong>CS50x</strong>, as a Teaching Fellow this time around.
+            Teaching the course that made me fall in love with computer science
+            in the first place.
+            <strong> 160+</strong> students over 5 cohorts
+          </p>
+        </div>
+      </section>
     </>
   );
 }
