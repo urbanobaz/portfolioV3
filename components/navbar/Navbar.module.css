@@ -1,0 +1,11 @@
+@media screen and (max-width: 1024px) {
+  .linksContainer {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .linksIconContainer {
+    display: none;
+  }
+}

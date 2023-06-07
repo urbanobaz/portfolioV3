@@ -22,12 +22,14 @@ export default function Home() {
       </Head>
       <div className={styles.content}>
         <aside className={styles.side}>
-          <Image
-            id="pictureImage"
-            className={styles['picture-image']}
-            src={headshot}
-            alt="Portrait of Urbano Baz"
-          />
+          <Link className="cursor-pointer" href={'/'}>
+            <Image
+              id="pictureImage"
+              className={styles['picture-image']}
+              src={headshot}
+              alt="Portrait of Urbano Baz"
+            />
+          </Link>
         </aside>
         <main className={styles.about}>
           <h1 className={styles.name}>Hi, I'm Urbano Baz</h1>

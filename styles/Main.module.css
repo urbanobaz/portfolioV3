@@ -53,7 +53,7 @@
   color: #fff;
   display: flex;
   position: relative;
-  min-height: cal(100vh - 96px);
+  min-height: calc(100vh - 55px);
   padding: 0 4rem;
   background-image: linear-gradient(
     to bottom right,
@@ -290,7 +290,7 @@
     justify-items: center;
     align-items: center;
     padding: 48px 0;
-    min-height: 100vh;
+    min-height: calc(100vh - 55px);
   }
 
   .contact {
@@ -415,7 +415,7 @@
     align-items: center;
     justify-content: center;
     padding: 48px 0;
-    min-height: 100vh;
+    min-height: calc(100vh - 55px);
   }
 
   .side {
