@@ -87,8 +87,7 @@ export default function Home() {
         <div className="left-0 w-10/12 md:w-1/2">
           <h3 className="text-xl font-semibold mb-5">Who am I?</h3>
           <p className="mb-2">
-            Based in sunny <strong>Miami</strong>{' '}
-            <FontAwesomeIcon icon={faSun} />,{' '}
+            Based in sunny <strong>Miami</strong>,{' '}
             <strong>Florida State University</strong> graduate. Fell in love
             with computer science when I took <strong>CS50x</strong> at{' '}
             <strong>Miami Dade College</strong> back in 2018 and didn't look
