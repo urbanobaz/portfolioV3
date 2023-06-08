@@ -23,22 +23,16 @@ const Navbar: FC<NavbarProps> = ({}) => {
         className={cn('flex justify-center flex-col', styles.linksContainer)}
       >
         <ul>
-          <li>
-            <Link className="mr-4 cursor-pointer" href={'/projects/1'}>
-              Project 1
-            </Link>
-          </li>
+          <Link className="mr-4 cursor-pointer" href={'/projects/1'}>
+            Project 1
+          </Link>
 
-          <li>
-            <Link className="mr-4 cursor-pointer" href={'/projects/2'}>
-              Project 2
-            </Link>
-          </li>
-          <li>
-            <Link className="cursor-pointer" href={'/projects/3'}>
-              Project 3
-            </Link>
-          </li>
+          <Link className="mr-4 cursor-pointer" href={'/projects/2'}>
+            Project 2
+          </Link>
+          <Link className="cursor-pointer" href={'/projects/3'}>
+            Project 3
+          </Link>
         </ul>
       </div>
       <div

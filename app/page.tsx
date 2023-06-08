@@ -12,6 +12,8 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import Link from 'next/link';
 import { faSun } from '@fortawesome/free-solid-svg-icons';
+import Navbar from '@/components/navbar/Navbar';
+import Footer from '@/components/footer/Footer';
 
 export default function Home() {
   return (
@@ -21,6 +23,7 @@ export default function Home() {
         <meta name="description" content="Urbano's portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
+      <Navbar />
       <div className={styles.content}>
         <aside className={styles.side}>
           <Link className="cursor-pointer" href={'/'}>
@@ -103,6 +106,7 @@ export default function Home() {
           </p>
         </div>
       </section>
+      <Footer />
     </>
   );
 }

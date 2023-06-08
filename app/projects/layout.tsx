@@ -1,5 +1,7 @@
-import './globals.css';
+import Navbar from '@/components/navbar/Navbar';
+import '../globals.css';
 import { Quicksand } from 'next/font/google';
+import Footer from '@/components/footer/Footer';
 
 const quicksand = Quicksand({ subsets: ['latin'] });
 
@@ -14,8 +16,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={quicksand.className}>{children}</body>
-    </html>
+    <div className={quicksand.className}>
+      <Navbar />
+      {children}
+      <Footer />
+    </div>
   );
 }
