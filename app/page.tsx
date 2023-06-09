@@ -79,8 +79,11 @@ export default function Home() {
         </div>
       </div>
 
-      <section id="about" className="flex justify-center mt-20">
-        <div className="left-0 w-10/12">
+      <section
+        id="about"
+        className={cn(styles.sectionContainer, 'flex justify-center mt-20')}
+      >
+        <div className={cn(styles.sectionWrapper, 'left-0 w-full')}>
           <h3 className="text-xl font-semibold mb-5">Who am I?</h3>
           <p className="mb-2">
             Based in sunny <strong>Miami Florida</strong>,{' '}
@@ -100,8 +103,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="projects" className="flex justify-center mt-20">
-        <div className="left-0 w-10/12 md:w-1/2">
+      <section
+        id="projects"
+        className={cn(styles.sectionContainer, 'flex justify-center mt-20')}
+      >
+        <div className={cn(styles.sectionWrapper, 'left-0 w-full')}>
           <h3 className="flex flex-col text-xl font-semibold mb-5">Projects</h3>
           <ul className="flex flex-col list-disc ml-6">
             <Link href={'/projects/1'}>

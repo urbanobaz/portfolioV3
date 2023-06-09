@@ -198,6 +198,10 @@
   object-fit: cover;
 }
 
+.sectionWrapper {
+  max-width: 980px;
+}
+
 /* Responsiveness */
 @media screen and (max-width: 899px) {
   .content {
@@ -314,6 +318,12 @@
 
   .picture-image {
     margin-top: 25px;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .sectionContainer {
+    padding: 0 40px;
   }
 }
 

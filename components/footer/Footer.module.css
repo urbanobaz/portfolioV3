@@ -1,3 +1,17 @@
+.footerContainer {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+  width: 100%;
+}
+
+.footerWrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 980px;
+  width: 100%;
+}
+
 .socialLink {
   height: 20px;
   margin: 0 20px;
@@ -8,4 +22,27 @@
 .socialLink:hover {
   transform: scale(1.25);
   transition: 0.2s;
+}
+
+.hrContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 3rem;
+}
+
+.hrLine {
+  max-width: 980px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 0.5px;
+  background-color: rgba(0, 147, 233, 0.4);
+  border-top-width: 0;
+}
+
+@media screen and (max-width: 1025px) {
+  .hrContainer {
+    padding: 0 40px;
+  }
 }
