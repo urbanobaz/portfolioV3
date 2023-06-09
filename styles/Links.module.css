@@ -33,11 +33,11 @@
 }
 
 .pictureContainer {
-  max-height: 15rem;
-  max-width: 15rem;
   justify-content: center;
   display: flex;
   flex-direction: row;
+  max-width: 980px;
+  width: 100%;
 }
 
 .pictureImage {

@@ -13,8 +13,13 @@ interface NavbarProps {}
 const Navbar: FC<NavbarProps> = ({}) => {
   const [dropdownVisible, setDropdownVisible] = useState(false);
   return (
-    <>
-      <nav className="mx-10 h-14 left-0 flex justify-between scroll-smooth lg:mx-1/8">
+    <div className="flex justify-center w-full">
+      <nav
+        className={cn(
+          styles.navbarContainer,
+          'h-14 flex w-full justify-between'
+        )}
+      >
         <Link
           className="flex justify-center flex-col text-2xl cursor-pointer"
           href={'/'}
@@ -75,7 +80,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
           Projects
         </Link>
       </div>
-    </>
+    </div>
   );
 };
 

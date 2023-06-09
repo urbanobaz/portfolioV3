@@ -24,7 +24,9 @@ export default function Home() {
         <meta name="description" content="Urbano's portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <Navbar />
+      <div className="flex justify-center w-full">
+        <Navbar />
+      </div>
       <div className={cn(styles.content, 'px-10')}>
         <div className={styles.contentWrapper}>
           <aside className={styles.side}>
@@ -37,7 +39,8 @@ export default function Home() {
               />
             </Link>
           </aside>
-          <main className={styles.about}>
+
+          <div className={styles.about}>
             <h1 className={styles.name}>Hi, I'm Urbano Baz</h1>
             <hr className={styles.hr} />
             <div className={styles.description}>
@@ -72,12 +75,12 @@ export default function Home() {
                 </a>
               </li>
             </ul>
-          </main>
+          </div>
         </div>
       </div>
 
       <section id="about" className="flex justify-center mt-20">
-        <div className="left-0 w-10/12 md:w-1/2">
+        <div className="left-0 w-10/12">
           <h3 className="text-xl font-semibold mb-5">Who am I?</h3>
           <p className="mb-2">
             Based in sunny <strong>Miami Florida</strong>,{' '}

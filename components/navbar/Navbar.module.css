@@ -1,3 +1,8 @@
+.navbarContainer {
+  max-width: 980px;
+  padding: 0;
+}
+
 .dropdownContainer {
   position: absolute;
   top: 56px;
@@ -19,9 +24,13 @@
   }
 }
 
-@media screen and (min-width: 899px) {
+@media screen and (max-width: 1025px) {
   .dropdownContainer {
     display: none;
+  }
+
+  .navbarContainer {
+    padding: 0 40px;
   }
 }
 
