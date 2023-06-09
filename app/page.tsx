@@ -72,25 +72,12 @@ export default function Home() {
           </ul>
         </main>
       </div>
-      <div className="flex justify-center mt-20">
-        <div className="left-0 w-10/12 md:w-1/2">
-          <h3 className="flex flex-col text-xl font-semibold mb-5">Projects</h3>
-          <ul className="flex flex-col list-disc ml-6">
-            <Link href={'/projects/1'}>
-              <li>Books & More</li>
-            </Link>
-            <Link href={'/projects/2'}>
-              <li>Portfolio</li>
-            </Link>
-          </ul>
-        </div>
-      </div>
 
-      <section className="flex justify-center mt-20">
+      <section id="about" className="flex justify-center mt-20">
         <div className="left-0 w-10/12 md:w-1/2">
           <h3 className="text-xl font-semibold mb-5">Who am I?</h3>
           <p className="mb-2">
-            Based in sunny <strong>Miami</strong>,{' '}
+            Based in sunny <strong>Miami Florida</strong>,{' '}
             <strong>Florida State University</strong> graduate. Fell in love
             with computer science when I took <strong>CS50x</strong> at{' '}
             <strong>Miami Dade College</strong> back in 2018 and didn't look
@@ -106,6 +93,21 @@ export default function Home() {
           </p>
         </div>
       </section>
+
+      <section id="projects" className="flex justify-center mt-20">
+        <div className="left-0 w-10/12 md:w-1/2">
+          <h3 className="flex flex-col text-xl font-semibold mb-5">Projects</h3>
+          <ul className="flex flex-col list-disc ml-6">
+            <Link href={'/projects/1'}>
+              <li>Books & More</li>
+            </Link>
+            <Link href={'/projects/2'}>
+              <li>Portfolio</li>
+            </Link>
+          </ul>
+        </div>
+      </section>
+
       <Footer />
     </>
   );

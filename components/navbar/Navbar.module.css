@@ -1,12 +1,16 @@
 .dropdownContainer {
-  position: fixed;
+  position: absolute;
   top: 56px;
   z-index: 10;
   background-color: white;
+  visibility: visible;
+  transition: 0.2s;
 }
 
 .disabled {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.2s;
 }
 
 @media screen and (max-width: 899px) {
