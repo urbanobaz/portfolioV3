@@ -110,8 +110,12 @@
   height: 25px;
 }
 
-@media screen and (max-width: 1024px) {
-  .linksContainer {
-    min-height: 100%;
+@media screen and (max-width: 524px) {
+  .linkButton {
+    height: 50px;
+  }
+
+  .linkContainer {
+    margin-bottom: 0;
   }
 }
