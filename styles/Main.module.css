@@ -290,7 +290,7 @@
     justify-items: center;
     align-items: center;
     padding: 48px 0;
-    min-height: calc(100vh - 55px);
+    min-height: calc(100svh - 55px);
   }
 
   .contact {
@@ -386,7 +386,7 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 524px) {
   .contact {
     display: flex;
     justify-content: center;
