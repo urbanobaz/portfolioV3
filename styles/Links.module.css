@@ -40,15 +40,6 @@
   flex-direction: row;
 }
 
-.link-button {
-  max-width: 980px;
-  width: 80%;
-  text-align: center;
-  margin-bottom: 2rem;
-  font-weight: 400;
-  font-size: 0.9rem;
-}
-
 .pictureImage {
   height: 250px;
   width: 250px;

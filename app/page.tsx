@@ -14,6 +14,7 @@ import Link from 'next/link';
 import { faSun } from '@fortawesome/free-solid-svg-icons';
 import Navbar from '@/components/navbar/Navbar';
 import Footer from '@/components/footer/Footer';
+import { cn } from './helpers/utils';
 
 export default function Home() {
   return (
@@ -24,53 +25,55 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Navbar />
-      <div className={styles.content}>
-        <aside className={styles.side}>
-          <Link className="cursor-pointer" href={'/'}>
-            <Image
-              id="pictureImage"
-              className={styles['picture-image']}
-              src={headshot}
-              alt="Portrait of Urbano Baz"
-            />
-          </Link>
-        </aside>
-        <main className={styles.about}>
-          <h1 className={styles.name}>Hi, I'm Urbano Baz</h1>
-          <hr className={styles.hr} />
-          <div className={styles.description}>
-            <p>
-              I am a software engineer and instructor who loves creating UIs
-              with React.
-            </p>
-          </div>
-          <div className={styles.contact}>
-            <a className={styles.button} href="mailto:urbanobaz@yahoo.com">
-              Get in touch
-            </a>
-          </div>
-          <ul className={styles.social} id="social">
-            <li>
-              <a className={styles.link} href="https://twitter.com/ubaz_3">
-                <FontAwesomeIcon icon={faTwitter} />
+      <div className={cn(styles.content, 'px-10')}>
+        <div className={styles.contentWrapper}>
+          <aside className={styles.side}>
+            <Link className="cursor-pointer" href={'/'}>
+              <Image
+                id="pictureImage"
+                className={styles['picture-image']}
+                src={headshot}
+                alt="Portrait of Urbano Baz"
+              />
+            </Link>
+          </aside>
+          <main className={styles.about}>
+            <h1 className={styles.name}>Hi, I'm Urbano Baz</h1>
+            <hr className={styles.hr} />
+            <div className={styles.description}>
+              <p className="w-11/12">
+                I am a software engineer and instructor who loves creating UIs
+                with React.
+              </p>
+            </div>
+            <div className={styles.contact}>
+              <a className={styles.button} href="mailto:urbanobaz@yahoo.com">
+                Get in touch
               </a>
-            </li>
-            <li>
-              <a className={styles.link} href="https://github.com/urbanobaz">
-                <i className="fab fa-github"></i>
-                <FontAwesomeIcon icon={faGithub} />
-              </a>
-            </li>
-            <li>
-              <a
-                className={styles.link}
-                href="https://www.linkedin.com/in/urbanobaz"
-              >
-                <FontAwesomeIcon icon={faLinkedinIn} />
-              </a>
-            </li>
-          </ul>
-        </main>
+            </div>
+            <ul className={styles.social} id="social">
+              <li>
+                <a className={styles.link} href="https://twitter.com/ubaz_3">
+                  <FontAwesomeIcon icon={faTwitter} />
+                </a>
+              </li>
+              <li>
+                <a className={styles.link} href="https://github.com/urbanobaz">
+                  <i className="fab fa-github"></i>
+                  <FontAwesomeIcon icon={faGithub} />
+                </a>
+              </li>
+              <li>
+                <a
+                  className={styles.link}
+                  href="https://www.linkedin.com/in/urbanobaz"
+                >
+                  <FontAwesomeIcon icon={faLinkedinIn} />
+                </a>
+              </li>
+            </ul>
+          </main>
+        </div>
       </div>
 
       <section id="about" className="flex justify-center mt-20">
