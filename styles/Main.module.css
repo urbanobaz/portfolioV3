@@ -18,7 +18,6 @@
   justify-content: center;
 }
 
-.job,
 .button {
   font-family: 'Montserrat', 'Quicksand', sans-serif;
   letter-spacing: 0.3em;
@@ -33,6 +32,7 @@
 
 .contentWrapper {
   display: flex;
+  max-width: 980px;
 }
 
 .content {
@@ -58,12 +58,6 @@
 
 #pictureImage {
   opacity: 1;
-}
-
-.picture {
-  padding-top: 100%;
-  position: relative;
-  width: 100%;
 }
 
 .name {

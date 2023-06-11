@@ -44,8 +44,8 @@ export default function Home() {
             <hr className={styles.hr} />
             <div className={styles.description}>
               <p className="w-11/12">
-                I am a software engineer and instructor who loves creating UIs
-                with React.
+                A software engineer and instructor who loves creating
+                beautifully designed UIs with React.
               </p>
             </div>
             <div className={styles.contact}>
@@ -88,25 +88,26 @@ export default function Home() {
             Based in sunny Miami Florida. A Florida State University graduate in
             Finance that fell in love with computer science when I took{' '}
             <a
+              href="https://cs50.harvard.edu/x/2023/"
+              className="text-blue-600 hover:font-medium"
+            >
+              CS50x
+            </a>
+            . I couldn't get enough of what I was learning and the things I was
+            building.
+          </p>
+          <p className="mb-4">
+            In 2019 I started working as Teaching Fellow with the{' '}
+            <a
               href="https://mdcthereporter.com/the-idea-center-to-offer-computer-science-masterclass-cs50x-miami/"
               className="text-blue-600 hover:font-medium"
             >
               CS50x
             </a>{' '}
-            at Miami Dade College. I couldn't get enough of what I was learning
-            and the things I was building.
-          </p>
-          <p className="mb-4">
-            In 2019 I started working as Teaching Fellow with the{' '}
-            <a
-              href="https://cs50.harvard.edu/x/2023/"
-              className="text-blue-600 hover:font-medium"
-            >
-              CS50x
-            </a>{' '}
-            program. Teaching the course that made me fall in love with computer
-            science in the first place. Over 2.5 years working as an instructor
-            and coordinator I worked with 160+ students over 5 cohorts.
+            program at Miami Dade College. Teaching the course that made me fall
+            in love with computer science in the first place. Over 2.5 years
+            working as an instructor and coordinator I worked with 160+ students
+            over 5 cohorts.
           </p>
           <p>
             In 2021 I got my first role as a software engineer with{' '}
