@@ -49,13 +49,20 @@ export default function Home() {
             </div>
             <ul className={styles.social} id="social">
               <li>
-                <a className={styles.link} href="https://twitter.com/ubaz_3">
+                <a
+                  className={styles.link}
+                  href="https://twitter.com/ubaz_3"
+                  aria-label="Link to Urbano's Twitter"
+                >
                   <FontAwesomeIcon icon={faTwitter} />
                 </a>
               </li>
               <li>
-                <a className={styles.link} href="https://github.com/urbanobaz">
-                  <i className="fab fa-github"></i>
+                <a
+                  className={styles.link}
+                  href="https://github.com/urbanobaz"
+                  aria-label="Link to Urbano's Github"
+                >
                   <FontAwesomeIcon icon={faGithub} />
                 </a>
               </li>
@@ -63,6 +70,7 @@ export default function Home() {
                 <a
                   className={styles.link}
                   href="https://www.linkedin.com/in/urbanobaz"
+                  aria-label="Link to Urbano's LinkedIn"
                 >
                   <FontAwesomeIcon icon={faLinkedinIn} />
                 </a>
@@ -123,12 +131,17 @@ export default function Home() {
         <div className={cn(styles.sectionWrapper, 'left-0 w-full')}>
           <h3 className="flex flex-col text-xl font-semibold mb-5">Projects</h3>
           <ul className="flex flex-col list-disc ml-6">
-            <Link href={'/projects/1'} className="hover:font-medium">
-              <li>Books & More</li>
-            </Link>
-            <Link href={'/projects/2'} className="hover:font-medium">
-              <li>Portfolio</li>
-            </Link>
+            <li>
+              <Link href={'/projects/1'} className="hover:font-medium">
+                Books & More
+              </Link>
+            </li>
+
+            <li>
+              <Link href={'/projects/2'} className="hover:font-medium">
+                Portfolio
+              </Link>
+            </li>
           </ul>
         </div>
       </section>

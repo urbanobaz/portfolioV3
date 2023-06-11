@@ -30,19 +30,23 @@ const Navbar: FC<NavbarProps> = ({}) => {
         <div
           className={cn('flex justify-center flex-col', styles.linksContainer)}
         >
-          <ul>
-            <Link
-              className="mr-4 cursor-pointer font-medium hover:font-semibold"
-              href={'/#about'}
-            >
-              About
-            </Link>
-            <Link
-              className="mr-4 cursor-pointer font-medium hover:font-semibold"
-              href={'/#projects'}
-            >
-              Projects
-            </Link>
+          <ul className="flex">
+            <li>
+              <Link
+                className="mr-4 cursor-pointer font-medium hover:font-semibold"
+                href={'/#about'}
+              >
+                About
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="mr-4 cursor-pointer font-medium hover:font-semibold"
+                href={'/#projects'}
+              >
+                Projects
+              </Link>
+            </li>
           </ul>
         </div>
         <button

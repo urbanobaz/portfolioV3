@@ -23,6 +23,7 @@ const Links = () => {
             onClick={(e) => {
               router.push('https://urbanobaz.com');
             }}
+            type="button"
           >
             <FontAwesomeIcon icon={faUser} className={styles.linkIcon} />
             <p>Portfolio</p>
@@ -32,6 +33,7 @@ const Links = () => {
             onClick={(e) => {
               router.push('https://linkedin.com/in/urbanobaz');
             }}
+            type="button"
           >
             <FontAwesomeIcon icon={faLinkedinIn} className={styles.linkIcon} />
             <p>LinkedIn</p>
@@ -41,6 +43,7 @@ const Links = () => {
             onClick={(e) => {
               router.push('https://github.com/urbanobaz');
             }}
+            type="button"
           >
             <FontAwesomeIcon icon={faGithub} className={styles.linkIcon} />
             <p>Github</p>
@@ -50,6 +53,7 @@ const Links = () => {
             onClick={(e) => {
               router.push('https://twitter.com/ubaz_3');
             }}
+            type="button"
           >
             <FontAwesomeIcon icon={faTwitter} className={styles.linkIcon} />
             <p>Twitter</p>
