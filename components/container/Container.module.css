@@ -1,5 +1,6 @@
 .container {
   max-width: 100svw;
+  min-height: calc(100svh - 256px - 10rem);
   display: flex;
   justify-content: center;
 }
@@ -7,4 +8,10 @@
 .containerWrapper {
   max-width: 980px;
   width: 100%;
+}
+
+@media screen and (max-width: 1025px) {
+  .containerWrapper {
+    padding: 0 40px;
+  }
 }

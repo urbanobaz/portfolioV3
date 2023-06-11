@@ -5,11 +5,6 @@ import Footer from '@/components/footer/Footer';
 
 const quicksand = Quicksand({ subsets: ['latin'] });
 
-export const metadata = {
-  title: "Urbano's",
-  description: 'Learn more about Urbano',
-};
-
 export default function RootLayout({
   children,
 }: {

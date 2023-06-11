@@ -6,8 +6,8 @@ interface pageProps {}
 const page: FC<pageProps> = ({}) => {
   return (
     <Container>
-      <h2 className="text-xl font-semibold mb-5">Portfolio</h2>
-      <p className="mb-2">
+      <h2 className="text-xl font-semibold mb-10">Portfolio</h2>
+      <p className="mb-5">
         NextJS project highlight a little bit more information about myself.
         Check out the{' '}
         <a
@@ -28,7 +28,7 @@ const page: FC<pageProps> = ({}) => {
 
       <p>
         <strong className="font-semibold">Technologies Used:</strong> React,
-        TypeScript, TailwindCSS
+        TypeScript, TailwindCSS, NextJS
       </p>
     </Container>
   );
