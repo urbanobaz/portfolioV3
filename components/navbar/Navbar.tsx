@@ -23,7 +23,6 @@ const Navbar: FC<NavbarProps> = ({}) => {
         <Link
           className="flex justify-center flex-col text-2xl cursor-pointer"
           href={'/'}
-          onClick={() => setDropdownVisible(!dropdownVisible)}
         >
           <Image height={30} src={PalmTree} alt={'Logo'} />
         </Link>
