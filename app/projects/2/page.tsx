@@ -6,7 +6,7 @@ interface pageProps {}
 const page: FC<pageProps> = ({}) => {
   return (
     <Container>
-      <h2 className="text-xl font-semibold mb-10">Portfolio</h2>
+      <h2 className="text-2xl font-semibold mb-10">Portfolio</h2>
       <p className="mb-5">
         NextJS project highlight a little bit more information about myself.
         Check out the{' '}
