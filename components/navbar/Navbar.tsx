@@ -50,6 +50,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
             'flex justify-center flex-col',
             styles.linksIconContainer
           )}
+          type="button"
           onClick={() => setDropdownVisible(!dropdownVisible)}
         >
           {dropdownVisible ? (

@@ -1,7 +1,6 @@
 import './globals.css';
 import { Quicksand } from 'next/font/google';
 import headshot from '../public/finalheadshotedit.png';
-import Head from 'next/head';
 
 const quicksand = Quicksand({ subsets: ['latin'] });
 
@@ -16,14 +15,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <>
-      <Head>
-        <meta property="og:image" content="../public/finalheadshotedit.png" />
-        <meta property="og:title" content="Urbano's Portfolio" />
-      </Head>
-      <html lang="en">
-        <body className={quicksand.className}>{children}</body>
-      </html>
-    </>
+    <html lang="en">
+      <body className={quicksand.className}>{children}</body>
+    </html>
   );
 }
