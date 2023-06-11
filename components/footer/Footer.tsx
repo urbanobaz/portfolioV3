@@ -21,18 +21,27 @@ const Footer: FC<FooterProps> = ({}) => {
         </div>
         <ul className="flex justify-center" id="social">
           <li className={styles.socialLink}>
-            <a href="https://twitter.com/ubaz_3">
+            <a
+              href="https://twitter.com/ubaz_3"
+              aria-label="Link to Urbano's Twitter"
+            >
               <FontAwesomeIcon icon={faTwitter} />
             </a>
           </li>
           <li className={styles.socialLink}>
-            <a href="https://github.com/urbanobaz">
+            <a
+              href="https://github.com/urbanobaz"
+              aria-label="Link to Urbano's Github"
+            >
               <i className="fab fa-github"></i>
               <FontAwesomeIcon icon={faGithub} />
             </a>
           </li>
           <li className={styles.socialLink}>
-            <a href="https://www.linkedin.com/in/urbanobaz">
+            <a
+              href="https://www.linkedin.com/in/urbanobaz"
+              aria-label="Link to Urbano's LinkedIn"
+            >
               <FontAwesomeIcon icon={faLinkedinIn} />
             </a>
           </li>

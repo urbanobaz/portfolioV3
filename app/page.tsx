@@ -29,6 +29,7 @@ export default function Home() {
                 className={styles['picture-image']}
                 src={headshot}
                 alt="Portrait of Urbano Baz"
+                loading="lazy"
               />
             </Link>
           </aside>
