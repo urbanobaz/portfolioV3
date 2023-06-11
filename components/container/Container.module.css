@@ -1,0 +1,10 @@
+.container {
+  max-width: 100svw;
+  display: flex;
+  justify-content: center;
+}
+
+.containerWrapper {
+  max-width: 980px;
+  width: 100%;
+}
