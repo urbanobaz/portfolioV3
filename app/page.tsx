@@ -1,6 +1,5 @@
 'use client';
 import React from 'react';
-import Head from 'next/head';
 import Image from 'next/image';
 import headshot from '../public/finalheadshotedit.png';
 import styles from '../styles/Main.module.css';
@@ -18,11 +17,6 @@ import { cn } from './helpers/utils';
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Urbano's portfolio</title>
-        <meta name="description" content="Urbano's portfolio" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
       <div className="flex justify-center w-full">
         <Navbar />
       </div>
