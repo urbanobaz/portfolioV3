@@ -11,7 +11,6 @@ import {
   faTwitter,
 } from '@fortawesome/free-brands-svg-icons';
 import Link from 'next/link';
-import { faSun } from '@fortawesome/free-solid-svg-icons';
 import Navbar from '@/components/navbar/Navbar';
 import Footer from '@/components/footer/Footer';
 import { cn } from './helpers/utils';
@@ -85,20 +84,39 @@ export default function Home() {
       >
         <div className={cn(styles.sectionWrapper, 'left-0 w-full')}>
           <h3 className="text-xl font-semibold mb-5">Who am I?</h3>
-          <p className="mb-2">
-            Based in sunny <strong>Miami Florida</strong>,{' '}
-            <strong>Florida State University</strong> graduate. Fell in love
-            with computer science when I took <strong>CS50x</strong> at{' '}
-            <strong>Miami Dade College</strong> back in 2018 and didn't look
-            back. I couldn't get enough of what I was learning and the things I
-            was building.
+          <p className="mb-4">
+            Based in sunny Miami Florida. A Florida State University graduate in
+            Finance that fell in love with computer science when I took{' '}
+            <a
+              href="https://mdcthereporter.com/the-idea-center-to-offer-computer-science-masterclass-cs50x-miami/"
+              className="text-blue-600 hover:font-medium"
+            >
+              CS50x
+            </a>{' '}
+            at Miami Dade College. I couldn't get enough of what I was learning
+            and the things I was building.
+          </p>
+          <p className="mb-4">
+            In 2019 I started working as Teaching Fellow with the{' '}
+            <a
+              href="https://cs50.harvard.edu/x/2023/"
+              className="text-blue-600 hover:font-medium"
+            >
+              CS50x
+            </a>{' '}
+            program. Teaching the course that made me fall in love with computer
+            science in the first place. Over 2.5 years working as an instructor
+            and coordinator I worked with 160+ students over 5 cohorts.
           </p>
           <p>
-            A year of learning lead me back to where it all started, with{' '}
-            <strong>CS50x</strong>, as a Teaching Fellow this time around.
-            Teaching the course that made me fall in love with computer science
-            in the first place.
-            <strong> 160+</strong> students over 5 cohorts
+            In 2021 I got my first role as a software engineer with{' '}
+            <a
+              href="https://gohopscotch.com/"
+              className="text-blue-600 hover:font-medium"
+            >
+              Hopscotch
+            </a>{' '}
+            working mostly on the frontend with React/TypeScript.
           </p>
         </div>
       </section>
@@ -110,10 +128,10 @@ export default function Home() {
         <div className={cn(styles.sectionWrapper, 'left-0 w-full')}>
           <h3 className="flex flex-col text-xl font-semibold mb-5">Projects</h3>
           <ul className="flex flex-col list-disc ml-6">
-            <Link href={'/projects/1'}>
+            <Link href={'/projects/1'} className="hover:font-medium">
               <li>Books & More</li>
             </Link>
-            <Link href={'/projects/2'}>
+            <Link href={'/projects/2'} className="hover:font-medium">
               <li>Portfolio</li>
             </Link>
           </ul>
