@@ -40,7 +40,7 @@ export default function Home() {
             <div className={styles.description}>
               <p className="w-11/12">
                 A software engineer and instructor who loves creating
-                beautifully designed UIs with React.
+                beautifully designed and accessible UIs with React.
               </p>
             </div>
             <div className={styles.contact}>
