@@ -313,6 +313,10 @@
   .picture-image {
     margin-top: 25px;
   }
+
+  .subText {
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 1025px) {

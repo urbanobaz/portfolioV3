@@ -38,7 +38,7 @@ export default function Home() {
             <h1 className={styles.name}>Hi, I'm Urbano Baz</h1>
             <hr className={styles.hr} />
             <div className={styles.description}>
-              <p className="w-11/12">
+              <p className={styles.subText}>
                 A software engineer and instructor who loves creating
                 beautifully designed and accessible UIs with React.
               </p>
@@ -86,7 +86,7 @@ export default function Home() {
         className={cn(styles.sectionContainer, 'flex justify-center mt-20')}
       >
         <div className={cn(styles.sectionWrapper, 'left-0 w-full')}>
-          <h3 className="text-xl font-semibold mb-5">Who am I?</h3>
+          <h2 className="text-xl font-semibold mb-5">Who am I?</h2>
           <p className="mb-4">
             Based in sunny Miami Florida. A Florida State University graduate in
             Finance that fell in love with computer science when I took{' '}
@@ -130,7 +130,7 @@ export default function Home() {
         className={cn(styles.sectionContainer, 'flex justify-center mt-20')}
       >
         <div className={cn(styles.sectionWrapper, 'left-0 w-full')}>
-          <h3 className="flex flex-col text-xl font-semibold mb-5">Projects</h3>
+          <h2 className="flex flex-col text-xl font-semibold mb-5">Projects</h2>
           <ul className="flex flex-col list-disc ml-6">
             <li>
               <Link href={'/projects/1'} className="hover:font-medium">

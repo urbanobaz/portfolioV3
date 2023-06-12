@@ -9,7 +9,7 @@ const page: FC<pageProps> = ({}) => {
       <h2 className="text-2xl font-semibold mb-10">Portfolio</h2>
       <p className="mb-5">
         NextJS project highlight a little bit more information about myself.
-        Check out the{' '}
+        Uses the new Next 13 app directory Check out the{' '}
         <a
           href="https://www.urbanobaz.com/"
           className="text-blue-600 hover:font-medium"
