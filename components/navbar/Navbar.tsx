@@ -13,7 +13,7 @@ interface NavbarProps {}
 const Navbar: FC<NavbarProps> = ({}) => {
   const [dropdownVisible, setDropdownVisible] = useState(false);
   return (
-    <div className="flex justify-center w-full">
+    <div className={cn(styles.navbarWrapper, 'flex justify-center w-full')}>
       <nav
         className={cn(
           styles.navbarContainer,

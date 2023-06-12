@@ -17,9 +17,7 @@ import { cn } from './helpers/utils';
 export default function Home() {
   return (
     <>
-      <div className="flex justify-center w-full">
-        <Navbar />
-      </div>
+      <Navbar />
       <div className={cn(styles.content, 'px-10')}>
         <div className={styles.contentWrapper}>
           <aside className={styles.side}>
