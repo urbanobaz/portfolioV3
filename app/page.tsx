@@ -37,8 +37,8 @@ export default function Home() {
             <hr className={styles.hr} />
             <div className={styles.description}>
               <p className={styles.subText}>
-                A software engineer and instructor who loves creating
-                beautifully designed and accessible UIs with React.
+                A software engineer who loves creating beautiful and accessible
+                UIs with React.
               </p>
             </div>
             <div className={styles.contact}>
