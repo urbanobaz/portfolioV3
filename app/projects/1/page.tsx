@@ -12,7 +12,7 @@ const page: FC<pageProps> = ({}) => {
         Uses the Google Books API to bring in book information when you add a
         book. Check out the{' '}
         <a
-          href="booksv3.vercel.app"
+          href="https://booksv3.vercel.app/"
           className="text-blue-600 hover:font-medium"
         >
           live site
