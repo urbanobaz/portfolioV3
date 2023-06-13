@@ -42,8 +42,8 @@ const Footer: FC<FooterProps> = ({}) => {
           </li>
           <li className={styles.socialLink}>
             <a
-              href="https://www.linkedin.com/in/urbanobaz"
-              aria-label="Link to Urbano's LinkedIn"
+              href="https://www.youtube.com/@ubazdevelops"
+              aria-label="Link to Urbano's Youtube"
               className={styles.footerIcon}
             >
               <FontAwesomeIcon icon={faYoutube} />
