@@ -102,6 +102,9 @@
   vertical-align: top;
   white-space: nowrap;
   will-change: box-shadow, transform;
+  width: 50%;
+  min-width: 200px;
+  text-align: center;
 }
 
 .button:hover {
@@ -125,7 +128,6 @@
 
 .social li {
   height: 2rem;
-  margin-right: 0.5rem;
   text-align: center;
   width: 2rem;
 }
@@ -215,6 +217,10 @@
     justify-content: center;
   }
 
+  .button {
+    width: 250px;
+  }
+
   .about {
     justify-content: flex-start;
     width: 100%;
@@ -239,11 +245,10 @@
 
   .social {
     width: 100%;
-    margin-left: 0.3rem;
   }
 
   .social li {
-    margin-right: 1.5rem;
+    margin: 0 1.25rem;
   }
 
   .social a {
@@ -312,10 +317,6 @@
 
   .picture-image {
     margin-top: 25px;
-  }
-
-  .subText {
-    font-size: 15px;
   }
 }
 

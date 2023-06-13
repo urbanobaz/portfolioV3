@@ -8,6 +8,7 @@ import {
   faGithub,
   faLinkedinIn,
   faTwitter,
+  faYoutube,
 } from '@fortawesome/free-brands-svg-icons';
 import Link from 'next/link';
 import Navbar from '@/components/navbar/Navbar';
@@ -36,7 +37,7 @@ export default function Home() {
             <h1 className={styles.name}>Hi, I'm Urbano Baz</h1>
             <hr className={styles.hr} />
             <div className={styles.description}>
-              <p className={styles.subText}>
+              <p>
                 A software engineer who loves creating beautiful and accessible
                 UIs with React.
               </p>
@@ -47,15 +48,6 @@ export default function Home() {
               </a>
             </div>
             <ul className={styles.social} id="social">
-              <li>
-                <a
-                  className={styles.link}
-                  href="https://twitter.com/ubaz_3"
-                  aria-label="Link to Urbano's Twitter"
-                >
-                  <FontAwesomeIcon icon={faTwitter} />
-                </a>
-              </li>
               <li>
                 <a
                   className={styles.link}
@@ -72,6 +64,24 @@ export default function Home() {
                   aria-label="Link to Urbano's LinkedIn"
                 >
                   <FontAwesomeIcon icon={faLinkedinIn} />
+                </a>
+              </li>
+              <li>
+                <a
+                  className={styles.link}
+                  href="https://www.youtube.com/@ubazdevelops"
+                  aria-label="Link to Urbano's Youtube"
+                >
+                  <FontAwesomeIcon icon={faYoutube} />
+                </a>
+              </li>
+              <li>
+                <a
+                  className={styles.link}
+                  href="https://twitter.com/ubaz_3"
+                  aria-label="Link to Urbano's Twitter"
+                >
+                  <FontAwesomeIcon icon={faTwitter} />
                 </a>
               </li>
             </ul>
