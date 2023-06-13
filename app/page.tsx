@@ -37,7 +37,7 @@ export default function Home() {
             <h1 className={styles.name}>Hi, I'm Urbano Baz</h1>
             <hr className={styles.hr} />
             <div className={styles.description}>
-              <p>
+              <p className={styles.subText}>
                 A software engineer who loves creating beautiful and accessible
                 UIs with React.
               </p>
