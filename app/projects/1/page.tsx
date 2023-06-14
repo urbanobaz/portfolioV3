@@ -7,7 +7,7 @@ const page: FC<pageProps> = ({}) => {
   return (
     <Container>
       <h2 className="text-2xl font-semibold mb-10">Books & More</h2>
-      <p className="mb-5">
+      <p className="mb-10">
         NextJS project that lets you keep track of the books in your collection.
         Uses the Google Books API to bring in book information when you add a
         book. Check out the{' '}
@@ -27,9 +27,16 @@ const page: FC<pageProps> = ({}) => {
         .
       </p>
 
-      <p>
+      <h2 className="text-md font-semibold">Still to do:</h2>
+      <ul className="flex flex-col list-disc ml-6">
+        <li>Add authentication</li>
+        <li>Set up database to store books for each user account</li>
+        <li>Improve design</li>
+      </ul>
+
+      <p className="mt-10">
         <strong className="font-semibold">Technologies Used:</strong> React,
-        NextJS
+        NextJS, Google Books API
       </p>
     </Container>
   );
