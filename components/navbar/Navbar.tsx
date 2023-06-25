@@ -13,7 +13,12 @@ interface NavbarProps {}
 const Navbar: FC<NavbarProps> = ({}) => {
   const [dropdownVisible, setDropdownVisible] = useState(false);
   return (
-    <div className={cn(styles.navbarWrapper, 'flex justify-center w-full')}>
+    <div
+      className={cn(
+        styles.navbarWrapper,
+        'flex justify-center w-full bg-blue-50'
+      )}
+    >
       <nav
         className={cn(
           styles.navbarContainer,
@@ -66,7 +71,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
       </nav>
       <div
         className={cn(
-          'flex flex-col px-10 w-full pt-3',
+          'flex flex-col px-10 w-full pt-3 bg-blue-50',
           styles.dropdownContainer,
           !dropdownVisible && styles.disabled
         )}
