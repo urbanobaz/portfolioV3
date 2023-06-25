@@ -1,9 +1,6 @@
 import Container from '@/components/container/Container';
-import { FC } from 'react';
 
-interface pageProps {}
-
-const page: FC<pageProps> = ({}) => {
+export default function PortfolioPage() {
   return (
     <Container>
       <h2 className="text-2xl font-semibold mb-10">Portfolio</h2>
@@ -32,6 +29,4 @@ const page: FC<pageProps> = ({}) => {
       </p>
     </Container>
   );
-};
-
-export default page;
+}
