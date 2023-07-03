@@ -118,7 +118,9 @@ export default function Home() {
             program at Miami Dade College. Teaching the course that made me fall
             in love with computer science in the first place. Over 2.5 years
             working as an instructor and coordinator I worked with 160+ students
-            over 5 cohorts.
+            over 5 cohorts usually between the ages of 18 and 30 but as young as
+            13 and as old as 67, proving it's never too early or too late to
+            start learning CS.
           </p>
           <p>
             In 2021 I got my first role as a software engineer with{' '}
@@ -128,7 +130,8 @@ export default function Home() {
             >
               Hopscotch
             </a>{' '}
-            working mostly on the frontend with React/TypeScript.
+            working on their customer facing payments platform and their
+            internal operations application.
           </p>
         </div>
       </section>
@@ -142,12 +145,18 @@ export default function Home() {
           <ul className="flex flex-col list-disc ml-6">
             <li>
               <Link href={'/projects/1'} className="hover:font-medium">
-                Books & More
+                Expensy
               </Link>
             </li>
 
             <li>
               <Link href={'/projects/2'} className="hover:font-medium">
+                Books & More
+              </Link>
+            </li>
+
+            <li>
+              <Link href={'/projects/3'} className="hover:font-medium">
                 Portfolio
               </Link>
             </li>

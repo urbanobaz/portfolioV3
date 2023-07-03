@@ -1,6 +1,6 @@
 .container {
   max-width: 100svw;
-  min-height: calc(100svh - 256px - 10rem);
+  min-height: calc(100svh - 56px - 237px);
   display: flex;
   justify-content: center;
 }

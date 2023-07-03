@@ -1,16 +1,15 @@
 import Container from '@/components/container/Container';
 import Image from 'next/image';
 
-export default function ExpensyPage() {
+export default function PortfolioPage() {
   return (
     <Container>
-      <h2 className="text-2xl font-semibold mb-10">Expensy</h2>
+      <h2 className="text-2xl font-semibold mb-10">Portfolio</h2>
       <p className="mb-5">
-        Full stack NextJS 13 application to keep track of your income and
-        expenses intuitively. Postgres as the database and NextAuth for
-        authentication. Check out the{' '}
+        NextJS project highlighting a little bit more information about myself.
+        Uses the new Next 13 app directory. Check out the{' '}
         <a
-          href="https://expensy-ten.vercel.app/"
+          href="https://www.urbanobaz.com/"
           className="text-blue-600 hover:font-medium"
         >
           live site
@@ -27,11 +26,10 @@ export default function ExpensyPage() {
 
       <p>
         <strong className="font-semibold">Technologies Used:</strong> React,
-        TypeScript, TailwindCSS, NextJS, NextAuth, Postgres, Prisma
+        TypeScript, TailwindCSS, NextJS
       </p>
-
       <Image
-        src="/expensy.png"
+        src="/portfolio.png"
         alt={'Project image hightlight'}
         width={980}
         height={750}
