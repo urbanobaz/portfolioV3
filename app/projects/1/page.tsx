@@ -35,7 +35,14 @@ export default function ExpensyPage() {
         alt={'Project image hightlight'}
         width={980}
         height={750}
-        className="mt-5"
+        className="mt-5 hidden rounded-xl sm:block"
+      />
+      <Image
+        src="/expensy-small.png"
+        alt={'Project image hightlight'}
+        width={980}
+        height={750}
+        className="mt-5 block rounded-xl sm:hidden"
       />
     </Container>
   );

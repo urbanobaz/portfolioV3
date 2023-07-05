@@ -33,7 +33,14 @@ export default function PortfolioPage() {
         alt={'Project image hightlight'}
         width={980}
         height={750}
-        className="mt-5"
+        className="mt-5 hidden rounded-xl sm:block"
+      />
+      <Image
+        src="/portfolio-small.png"
+        alt={'Project image hightlight'}
+        width={980}
+        height={750}
+        className="mt-5 block rounded-xl sm:hidden"
       />
     </Container>
   );
