@@ -48,7 +48,7 @@ export default function BooksPage() {
         className="mt-5 hidden rounded-xl sm:block"
       />
       <Image
-        src="/shots-books.png"
+        src="/books-small.png"
         alt={'Project image hightlight'}
         width={980}
         height={750}
