@@ -86,7 +86,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
         </Link>
         <Link
           className="mr-4 cursor-pointer h-10 font-medium hover:font-bold"
-          href={'#projects'}
+          href={'/#projects'}
           onClick={() => setDropdownVisible(!dropdownVisible)}
         >
           Projects
