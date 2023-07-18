@@ -14,6 +14,7 @@ import Link from 'next/link';
 import Navbar from '@/components/navbar/Navbar';
 import Footer from '@/components/footer/Footer';
 import { cn } from './helpers/utils';
+import { motion, AnimatePresence } from 'framer-motion';
 
 export default function Home() {
   return (
@@ -21,71 +22,122 @@ export default function Home() {
       <Navbar />
       <div className={cn(styles.content, 'px-10')}>
         <div className={styles.contentWrapper}>
-          <aside className={styles.side}>
-            <Link className="cursor-pointer" href={'/'}>
-              <Image
-                id="pictureImage"
-                className={styles['picture-image']}
-                src={headshot}
-                alt="Portrait of Urbano Baz"
-                loading="lazy"
-              />
-            </Link>
-          </aside>
+          <AnimatePresence>
+            <aside className={styles.side}>
+              <motion.div
+                initial={{ opacity: 0, y: 15 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 15 }}
+                transition={{ delay: 0.4 }}
+              >
+                <Link className="cursor-pointer" href={'/'}>
+                  <Image
+                    id="pictureImage"
+                    className={styles['picture-image']}
+                    src={headshot}
+                    alt="Portrait of Urbano Baz"
+                    loading="lazy"
+                  />
+                </Link>
+              </motion.div>
+            </aside>
 
-          <div className={styles.about}>
-            <h1 className={styles.name}>Hi, I'm Urbano Baz</h1>
-            <hr className={styles.hr} />
-            <div className={styles.description}>
-              <p className={styles.subText}>
-                A software engineer who loves creating beautiful and accessible
-                UIs with React.
-              </p>
+            <div className={styles.about}>
+              <motion.div
+                initial={{ opacity: 0, y: 15 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 15 }}
+                transition={{ delay: 0.55 }}
+              >
+                <h1 className={styles.name}>Hi, I'm Urbano Baz</h1>
+                <hr className={styles.hr} />
+                <div className={styles.description}>
+                  <p className={styles.subText}>
+                    A software engineer who loves creating beautiful and
+                    accessible UIs with React.
+                  </p>
+                </div>
+                <div className={styles.contact}>
+                  <a
+                    className={styles.button}
+                    href="mailto:urbanobaz@yahoo.com"
+                  >
+                    Get in touch
+                  </a>
+                </div>
+              </motion.div>
+
+              <ul className={styles.social} id="social">
+                <motion.div
+                  initial={{ opacity: 0, y: 15 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 15 }}
+                  transition={{ delay: 0.2 }}
+                >
+                  <li>
+                    <a
+                      className={styles.link}
+                      href="https://github.com/urbanobaz"
+                      aria-label="Link to Urbano's Github"
+                    >
+                      <FontAwesomeIcon icon={faGithub} />
+                    </a>
+                  </li>
+                </motion.div>
+
+                <motion.div
+                  initial={{ opacity: 0, y: 15 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 15 }}
+                  transition={{ delay: 0.25 }}
+                >
+                  <li>
+                    <a
+                      className={styles.link}
+                      href="https://www.linkedin.com/in/urbanobaz"
+                      aria-label="Link to Urbano's LinkedIn"
+                    >
+                      <FontAwesomeIcon icon={faLinkedinIn} />
+                    </a>
+                  </li>
+                </motion.div>
+
+                <motion.div
+                  initial={{ opacity: 0, y: 15 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 15 }}
+                  transition={{ delay: 0.3 }}
+                >
+                  <li>
+                    <a
+                      className={styles.link}
+                      href="https://www.youtube.com/@ubazdevelops"
+                      aria-label="Link to Urbano's Youtube"
+                    >
+                      <FontAwesomeIcon icon={faYoutube} />
+                    </a>
+                  </li>
+                </motion.div>
+
+                <motion.div
+                  initial={{ opacity: 0, y: 15 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 15 }}
+                  transition={{ delay: 0.35 }}
+                >
+                  <li>
+                    <a
+                      className={styles.link}
+                      href="https://twitter.com/ubaz_3"
+                      aria-label="Link to Urbano's Twitter"
+                    >
+                      <FontAwesomeIcon icon={faTwitter} />
+                    </a>
+                  </li>
+                </motion.div>
+              </ul>
             </div>
-            <div className={styles.contact}>
-              <a className={styles.button} href="mailto:urbanobaz@yahoo.com">
-                Get in touch
-              </a>
-            </div>
-            <ul className={styles.social} id="social">
-              <li>
-                <a
-                  className={styles.link}
-                  href="https://github.com/urbanobaz"
-                  aria-label="Link to Urbano's Github"
-                >
-                  <FontAwesomeIcon icon={faGithub} />
-                </a>
-              </li>
-              <li>
-                <a
-                  className={styles.link}
-                  href="https://www.linkedin.com/in/urbanobaz"
-                  aria-label="Link to Urbano's LinkedIn"
-                >
-                  <FontAwesomeIcon icon={faLinkedinIn} />
-                </a>
-              </li>
-              <li>
-                <a
-                  className={styles.link}
-                  href="https://www.youtube.com/@ubazdevelops"
-                  aria-label="Link to Urbano's Youtube"
-                >
-                  <FontAwesomeIcon icon={faYoutube} />
-                </a>
-              </li>
-              <li>
-                <a
-                  className={styles.link}
-                  href="https://twitter.com/ubaz_3"
-                  aria-label="Link to Urbano's Twitter"
-                >
-                  <FontAwesomeIcon icon={faTwitter} />
-                </a>
-              </li>
-            </ul>
-          </div>
+          </AnimatePresence>
         </div>
       </div>
 
