@@ -1,5 +1,7 @@
 'use client';
+
 import React from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 import headshot from '../public/finalheadshotedit.png';
 import styles from '../styles/Main.module.css';
@@ -13,8 +15,8 @@ import {
 import Link from 'next/link';
 import Navbar from '@/components/navbar/Navbar';
 import Footer from '@/components/footer/Footer';
+import TechStack from '@/components/TechStack';
 import { cn } from './helpers/utils';
-import { motion, AnimatePresence } from 'framer-motion';
 
 export default function Home() {
   return (
@@ -185,6 +187,22 @@ export default function Home() {
             working on their customer facing payments platform and their
             internal operations application.
           </p>
+        </div>
+      </section>
+
+      <section
+        id="tech"
+        className={cn(styles.sectionContainer, 'flex justify-center mt-20')}
+      >
+        <div className={cn(styles.sectionWrapper, 'left-0 w-full')}>
+          <h2 className="flex flex-col text-xl font-semibold mb-5">
+            Tech Stack
+          </h2>
+          <div className="w-full flex">
+            <div className="w-full">
+              <TechStack />
+            </div>
+          </div>
         </div>
       </section>
 

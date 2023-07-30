@@ -60,6 +60,14 @@ const Navbar: FC<NavbarProps> = ({}) => {
                 <li>
                   <Link
                     className="mr-4 cursor-pointer font-medium hover:font-semibold"
+                    href={'/#tech'}
+                  >
+                    Tech Stack
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className="mr-4 cursor-pointer font-medium hover:font-semibold"
                     href={'/#projects'}
                   >
                     Projects
