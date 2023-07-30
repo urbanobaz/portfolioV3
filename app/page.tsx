@@ -145,7 +145,7 @@ export default function Home() {
 
       <section
         id="about"
-        className={cn(styles.sectionContainer, 'flex justify-center mt-20')}
+        className={cn(styles.sectionContainer, 'flex justify-center')}
       >
         <div className={cn(styles.sectionWrapper, 'left-0 w-full')}>
           <h2 className="text-xl font-semibold mb-5">Who am I?</h2>
@@ -192,7 +192,7 @@ export default function Home() {
 
       <section
         id="tech"
-        className={cn(styles.sectionContainer, 'flex justify-center mt-20')}
+        className={cn(styles.sectionContainer, 'flex justify-center')}
       >
         <div className={cn(styles.sectionWrapper, 'left-0 w-full')}>
           <h2 className="flex flex-col text-xl font-semibold mb-5">
@@ -208,7 +208,7 @@ export default function Home() {
 
       <section
         id="projects"
-        className={cn(styles.sectionContainer, 'flex justify-center mt-20')}
+        className={cn(styles.sectionContainer, 'flex justify-center')}
       >
         <div className={cn(styles.sectionWrapper, 'left-0 w-full')}>
           <h2 className="flex flex-col text-xl font-semibold mb-5">Projects</h2>
