@@ -3,7 +3,7 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
-import headshot from '../public/finalheadshotedit.png';
+import { CldImage } from 'next-cloudinary';
 import styles from '../styles/Main.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -33,12 +33,14 @@ export default function Home() {
                 transition={{ delay: 0.4 }}
               >
                 <Link className="cursor-pointer" href={'/'}>
-                  <Image
+                  <CldImage
                     id="pictureImage"
                     className={styles['picture-image']}
-                    src={headshot}
+                    src="https://res.cloudinary.com/dfrugnsw9/image/upload/v1685401832/finalheadshotedit_tfqes4.png"
                     alt="Portrait of Urbano Baz"
                     loading="lazy"
+                    width={300}
+                    height={300}
                   />
                 </Link>
               </motion.div>
