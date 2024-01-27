@@ -200,7 +200,7 @@ const TechStack = () => {
           className="w-1/3 md:w-1/4  rounded-xl aspect-[1/1] m-2"
         >
           <Image
-            src="/rest-api.jpeg"
+            src="/rest.jpg"
             alt="Rest API logo"
             width={200}
             height={200}
