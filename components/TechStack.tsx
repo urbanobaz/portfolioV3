@@ -186,7 +186,7 @@ const TechStack = () => {
           className="w-1/3 md:w-1/4  rounded-xl aspect-[1/1] m-2"
         >
           <Image
-            src="/figma-logo.png"
+            src="/figma.png"
             alt="Figma logo"
             width={200}
             height={200}
