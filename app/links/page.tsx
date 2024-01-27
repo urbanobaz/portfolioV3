@@ -65,8 +65,10 @@ const Links = () => {
           <Image
             id="pictureImage"
             className={styles.pictureImage}
-            src={headshot}
+            src="https://res.cloudinary.com/dfrugnsw9/image/upload/v1685401832/finalheadshotedit_tfqes4.png"
             alt="Portrait of Urbano Baz"
+            width={250}
+            height={250}
           />
         </a>
       </div>
