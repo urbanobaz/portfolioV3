@@ -2,7 +2,6 @@
 
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import Image from 'next/image';
 import { CldImage } from 'next-cloudinary';
 import styles from '../styles/Main.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -38,7 +37,6 @@ export default function Home() {
                     className={styles['picture-image']}
                     src="https://res.cloudinary.com/dfrugnsw9/image/upload/v1685401832/finalheadshotedit_tfqes4.png"
                     alt="Portrait of Urbano Baz"
-                    loading="lazy"
                     width={300}
                     height={300}
                   />
