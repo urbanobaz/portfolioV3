@@ -81,6 +81,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
               </ul>
             </div>
             <button
+              id="dropdown-button"
               className={cn(
                 'flex justify-center flex-col',
                 styles.linksIconContainer
