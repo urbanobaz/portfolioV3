@@ -18,6 +18,16 @@
   transition: 0.2s;
 }
 
+.palmTreeLogo {
+  scale: 1;
+  transition: 0.2s;
+}
+
+.palmTreeLogo:hover {
+  scale: 1.2;
+  transition: 0.2s;
+}
+
 .disabled {
   visibility: hidden;
   opacity: 0;

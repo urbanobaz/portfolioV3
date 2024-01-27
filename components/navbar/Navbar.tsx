@@ -39,7 +39,12 @@ const Navbar: FC<NavbarProps> = ({}) => {
               className="flex justify-center flex-col text-2xl cursor-pointer"
               href={'/'}
             >
-              <Image height={30} src={PalmTree} alt={'Logo'} />
+              <Image
+                className={styles.palmTreeLogo}
+                height={30}
+                src={PalmTree}
+                alt={'Logo'}
+              />
             </Link>
 
             <div
