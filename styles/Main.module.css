@@ -40,11 +40,7 @@
   display: flex;
   position: relative;
   min-height: calc(100svh - 55px);
-  background-image: linear-gradient(
-    to bottom right,
-    rgba(0, 147, 233, 1),
-    rgba(128, 208, 199, 1)
-  );
+  background-image: linear-gradient(to bottom right, #0093e9, #80d0c7);
 }
 
 .about {
