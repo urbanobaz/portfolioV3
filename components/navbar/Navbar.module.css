@@ -1,26 +1,42 @@
 .navbarWrapper {
+  top: 45px;
   position: sticky;
-  top: 0;
   z-index: 20;
   opacity: 0.9;
+  background-color: transparent;
 }
 
 .navbarContainer {
+  background-color: white;
   max-width: 980px;
+  min-width: calc(100vw - 80px);
   padding: 0;
+  position: absolute;
+}
+
+.shortNav {
+  width: 50px;
+}
+
+.navbarInnerWrapper {
+  height: 100%;
+  width: 100%;
 }
 
 .dropdownContainer {
   position: absolute;
-  top: 56px;
+  top: 64px;
   z-index: 10;
   visibility: visible;
   transition: 0.2s;
+  border-radius: 5px;
+  width: calc(100svw - 120px);
 }
 
 .palmTreeLogo {
   scale: 1;
   transition: 0.2s;
+  margin-left: 20px;
 }
 
 .palmTreeLogo:hover {
@@ -34,16 +50,43 @@
   transition: 0.2s;
 }
 
+.link {
+  font-family: 'Montserrat', 'Quicksand', sans-serif;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.link:hover {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
 @media screen and (max-width: 899px) {
   .linksContainer {
     display: none;
   }
-}
 
-@media screen and (max-width: 1025px) {
-  .navbarContainer,
-  .section {
-    padding: 0 40px;
+  .navbarWrapper {
+    margin: 0 20px;
+    width: calc(100vw - 40px);
+  }
+
+  .linksIconContainer {
+    margin-right: 20px;
+  }
+
+  .navbarContainer {
+    margin: 0 30px;
+    min-width: calc(100vw - 60px);
+  }
+
+  .navbarInnerWrapper {
+    width: 100%;
+  }
+
+  .dropdownContainer {
+    width: calc(100svw - 80px);
+    padding: 10px 26px 0 26px;
   }
 }
 

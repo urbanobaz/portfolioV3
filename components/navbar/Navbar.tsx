@@ -14,18 +14,15 @@ interface NavbarProps {}
 
 const Navbar: FC<NavbarProps> = ({}) => {
   const [dropdownVisible, setDropdownVisible] = useState(false);
+  const [shortVersionNav, setShortVersionNav] = useState(true);
   return (
-    <div
-      className={cn(
-        styles.navbarWrapper,
-        'flex justify-center w-full bg-blue-50'
-      )}
-    >
+    <div className={cn(styles.navbarWrapper, 'flex justify-center w-full')}>
       <AnimatePresence>
         <nav
           className={cn(
             styles.navbarContainer,
-            'h-14 flex w-full justify-between'
+            'h-14 flex justify-between rounded-full',
+            shortVersionNav ? styles.shortNav : null
           )}
         >
           <motion.div
@@ -33,7 +30,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 15 }}
             transition={{ delay: 0.75 }}
-            className="flex justify-between w-full"
+            className={cn(styles.navbarInnerWrapper, 'flex justify-between')}
           >
             <Link
               className="flex justify-center flex-col text-2xl cursor-pointer"
@@ -49,14 +46,17 @@ const Navbar: FC<NavbarProps> = ({}) => {
 
             <div
               className={cn(
-                'flex justify-center flex-col',
-                styles.linksContainer
+                styles.linksContainer,
+                'flex justify-center flex-col mr-2'
               )}
             >
               <ul className="flex">
                 <li>
                   <Link
-                    className="mr-4 cursor-pointer font-medium hover:font-semibold"
+                    className={cn(
+                      styles.link,
+                      'mr-8 cursor-pointer font-medium text-black'
+                    )}
                     href={'/#about'}
                   >
                     About
@@ -64,15 +64,21 @@ const Navbar: FC<NavbarProps> = ({}) => {
                 </li>
                 <li>
                   <Link
-                    className="mr-4 cursor-pointer font-medium hover:font-semibold"
+                    className={cn(
+                      styles.link,
+                      'mr-8 cursor-pointer font-medium text-black'
+                    )}
                     href={'/#tech'}
                   >
-                    Tech Stack
+                    Tech-stack
                   </Link>
                 </li>
                 <li>
                   <Link
-                    className="mr-4 cursor-pointer font-medium hover:font-semibold"
+                    className={cn(
+                      styles.link,
+                      'mr-4 cursor-pointer font-medium text-black'
+                    )}
                     href={'/#projects'}
                   >
                     Projects
@@ -83,8 +89,8 @@ const Navbar: FC<NavbarProps> = ({}) => {
             <button
               id="dropdown-button"
               className={cn(
-                'flex justify-center flex-col',
-                styles.linksIconContainer
+                styles.linksIconContainer,
+                'flex justify-center flex-col'
               )}
               type="button"
               onClick={() => setDropdownVisible(!dropdownVisible)}
@@ -100,8 +106,8 @@ const Navbar: FC<NavbarProps> = ({}) => {
       </AnimatePresence>
       <div
         className={cn(
-          'flex flex-col px-10 w-full pt-3 bg-blue-50',
           styles.dropdownContainer,
+          'flex flex-col px-10 w-full pt-3 bg-blue-50',
           !dropdownVisible && styles.disabled
         )}
       >

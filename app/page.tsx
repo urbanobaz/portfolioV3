@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <div className={cn(styles.content, 'px-10')}>
+      <div className={cn(styles.content, 'px-10 flex flex-col')}>
         <div className={styles.contentWrapper}>
           <AnimatePresence>
             <aside className={styles.side}>
