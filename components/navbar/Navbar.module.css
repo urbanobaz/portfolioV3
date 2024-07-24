@@ -8,8 +8,8 @@
 
 .navbarContainer {
   background-color: white;
+  width: calc(100vw - 80px);
   max-width: 980px;
-  min-width: calc(100vw - 80px);
   padding: 0;
   position: absolute;
 }
@@ -80,6 +80,10 @@
     min-width: calc(100vw - 60px);
   }
 
+  .navbarWrapper {
+    top: 30px;
+  }
+
   .navbarInnerWrapper {
     width: 100%;
   }
@@ -87,6 +91,12 @@
   .dropdownContainer {
     width: calc(100svw - 80px);
     padding: 10px 26px 0 26px;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .navbarWrapper {
+    top: 16px;
   }
 }
 

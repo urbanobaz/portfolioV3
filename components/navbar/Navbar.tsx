@@ -14,7 +14,7 @@ interface NavbarProps {}
 
 const Navbar: FC<NavbarProps> = ({}) => {
   const [dropdownVisible, setDropdownVisible] = useState(false);
-  const [shortVersionNav, setShortVersionNav] = useState(true);
+  const [shortVersionNav, setShortVersionNav] = useState(false);
   return (
     <div className={cn(styles.navbarWrapper, 'flex justify-center w-full')}>
       <AnimatePresence>
