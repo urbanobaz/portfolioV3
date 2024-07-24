@@ -325,6 +325,10 @@
   .subText {
     font-size: 15px;
   }
+
+  .content {
+    margin-top: 36px;
+  }
 }
 
 @media screen and (max-width: 1025px) {
