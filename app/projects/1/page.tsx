@@ -5,6 +5,7 @@ import Image from 'next/image';
 export default function ExpensyPage() {
   return (
     <div>
+      <Navbar />
       <Container>
         <h2 className="text-2xl font-semibold mb-10">Expensy</h2>
         <p className="mb-5">
