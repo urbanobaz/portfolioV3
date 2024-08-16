@@ -1,6 +1,5 @@
 import './globals.css';
 import { Quicksand } from 'next/font/google';
-import headshot from '../public/finalheadshotedit.png';
 
 const quicksand = Quicksand({ subsets: ['latin'] });
 
