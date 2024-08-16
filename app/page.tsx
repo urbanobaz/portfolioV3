@@ -158,8 +158,7 @@ export default function Home() {
             >
               CS50x
             </a>
-            . I couldn't get enough of what I was learning and the things I was
-            building.
+            .
           </p>
           <p className="mb-4">
             In 2019 I started working as Teaching Fellow with the{' '}
@@ -172,9 +171,7 @@ export default function Home() {
             program at Miami Dade College. Teaching the course that made me fall
             in love with computer science in the first place. Over 2.5 years
             working as an instructor and coordinator I worked with 160+ students
-            over 5 cohorts usually between the ages of 18 and 30 but as young as
-            13 and as old as 67, proving it's never too early or too late to
-            start learning CS.
+            over 5 cohorts usually between the ages of 18 and 30.
           </p>
           <p>
             In 2021 I got my first role as a software engineer with{' '}
