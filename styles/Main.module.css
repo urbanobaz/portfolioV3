@@ -177,6 +177,14 @@
   transition: 0.3s;
 }
 
+
+.card,
+.picture-image {
+  box-shadow: none;
+  transform: scale(1);
+  transition: 0.3s ease-in;
+}
+
 .link:hover {
   transform: scale(1.25);
   transition: 0.1s;

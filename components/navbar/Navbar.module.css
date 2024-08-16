@@ -2,12 +2,13 @@
   top: 45px;
   position: sticky;
   z-index: 20;
-  opacity: 0.9;
+  opacity: 0.95;
   background-color: transparent;
 }
 
 .navbarContainer {
   background-color: white;
+  border: 1px solid black;
   width: calc(100vw - 80px);
   max-width: 980px;
   padding: 0;
