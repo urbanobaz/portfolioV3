@@ -4,9 +4,9 @@ import Image from 'next/image';
 
 export default function ExpensyPage() {
   return (
-    <div>
+    <div className='flex flex-col'>
       <Navbar />
-      <Container>
+      <div className='mt-36 max-w-[980px] w-full mx-auto'>
         <h2 className="text-2xl font-semibold mb-10">Expensy</h2>
         <p className="mb-5">
           Full stack NextJS 13 application to keep track of your income and
@@ -47,7 +47,7 @@ export default function ExpensyPage() {
           height={750}
           className="mt-5 block rounded-xl sm:hidden"
         />
-      </Container>
+      </div>
     </div>
   );
 }
