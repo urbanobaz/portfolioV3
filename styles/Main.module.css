@@ -204,7 +204,17 @@
   padding-top: 5rem;
 }
 
+.hrWrapper {
+  transform: translate(-35px, 24px);
+}
+
 /* Responsiveness */
+@media screen and (max-width: 1070px) {
+  .sectionContainer {
+    padding: 0 40px;
+  }
+}
+
 @media screen and (max-width: 899px) {
   .content {
     flex-direction: column;
@@ -309,6 +319,43 @@
     width: 100%;
     align-self: center;
   }
+
+  .arrowDiv {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .timeText {
+    font-size: 14px;
+    width: 95px;
+    min-width: 95px;
+  }
+
+  .employerText {
+    font-size: 14px;
+  }
+
+  .circleDiv {
+    margin-right: 8px;
+    height: 12px;
+    width: 12px;
+    min-width: 12px;
+    min-height: 12px;
+    margin-top: 4px;
+  }
+
+  .hrWrapper {
+    transform: translate(-14px, 18px);
+  }
+
+  .hrLine {
+    height: 20px;
+  }
+
+  .arrowDiv {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 524px) {
@@ -338,9 +385,21 @@
   }
 }
 
-@media screen and (max-width: 1025px) {
-  .sectionContainer {
-    padding: 0 40px;
+@media screen and (max-width: 424px) {
+  .circleDiv,
+  .hrLine {
+    display: none;
+  }
+
+  .arrowDiv {
+    display: block;
+    margin-top: -2px;
+    margin-left: -6px;
+    margin-right: 4px;
+  }
+
+  .workRow {
+    margin-bottom: 32px;
   }
 }
 
@@ -367,5 +426,9 @@
   .card {
     margin: 20px 30px;
     min-height: 700px;
+  }
+
+  .arrowDiv {
+    display: none;
   }
 }

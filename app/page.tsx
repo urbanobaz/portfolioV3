@@ -188,6 +188,39 @@ export default function Home() {
       </section>
 
       <section
+        id="work"
+        className={cn(styles.sectionContainer, 'flex justify-center w-full')}
+      >
+        <div className='max-w-[980px] w-full mt-[80px]'>
+          <h2 className="flex flex-col text-xl font-semibold mb-5">Work</h2>
+          <div className={cn(styles.workRow, 'flex mb-[16px]')}>
+            <p className={cn('w-[120px]', styles.timeText)}>2023-present</p>
+            <div className={styles.arrowDiv}>→</div>
+            <div className={cn('w-[26px] h-[26px] border-[1px] border-black rounded-full mr-[22px]', styles.circleDiv)} />
+            <div className={styles.hrWrapper}>
+              <hr className={cn(styles.hrLine, 'h-[18px] w-[1px] bg-slate-900')} />
+            </div>
+            <p className={styles.employerText}>Frontend Developer, <a href='https://tirerack.com' className='underline underline-offset-4'>Tirerack</a></p>
+          </div>
+          <div className={cn(styles.workRow, 'flex mb-[16px]')}>
+            <p className={cn('w-[120px]', styles.timeText)}>2021-2023</p>
+            <div className={styles.arrowDiv}>→</div>
+            <div className={cn('w-[26px] h-[26px] border-[1px] border-black rounded-full mr-[22px]', styles.circleDiv)} />
+            <div className={styles.hrWrapper}>
+              <hr className={cn(styles.hrLine, 'h-[18px] w-[1px] bg-slate-900')} />
+            </div>
+            <p className={styles.employerText}>Software Engineer, <a href='https://gohopscotch.com' className='underline underline-offset-4'>Hopscotch</a></p>
+          </div>
+          <div className={cn(styles.workRow, 'flex mb-[16px]')}>
+            <p className={cn('w-[120px]', styles.timeText)}>2019-2021</p>
+            <div className={styles.arrowDiv}>→</div>
+            <div className={cn('w-[26px] h-[26px] border-[1px] border-black rounded-full mr-[22px]', styles.circleDiv)} />
+            <p className={styles.employerText}>Instructor, <a href='https://theideacenter.co/' className='underline underline-offset-4'>The Idea Center at Miami Dade College</a></p>
+          </div>
+        </div>
+      </section>
+
+      <section
         id="tech"
         className={cn(styles.sectionContainer, 'flex justify-center')}
       >
