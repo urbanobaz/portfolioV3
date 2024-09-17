@@ -205,7 +205,7 @@
 }
 
 .hrWrapper {
-  transform: translate(-35px, 24px);
+  transform: translate(-40px, 24px);
 }
 
 /* Responsiveness */
@@ -328,8 +328,8 @@
 @media screen and (max-width: 640px) {
   .timeText {
     font-size: 14px;
-    width: 95px;
-    min-width: 95px;
+    width: 80px;
+    min-width: 80px;
   }
 
   .employerText {
@@ -337,7 +337,7 @@
   }
 
   .circleDiv {
-    margin-right: 8px;
+    margin-right: 12px;
     height: 12px;
     width: 12px;
     min-width: 12px;
@@ -346,7 +346,7 @@
   }
 
   .hrWrapper {
-    transform: translate(-14px, 18px);
+    transform: translate(-18px, 18px);
   }
 
   .hrLine {
