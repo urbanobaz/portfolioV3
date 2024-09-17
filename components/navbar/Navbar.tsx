@@ -68,6 +68,17 @@ const Navbar: FC<NavbarProps> = ({}) => {
                       styles.link,
                       'mr-8 cursor-pointer font-medium text-black'
                     )}
+                    href={'/#work'}
+                  >
+                    Work
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className={cn(
+                      styles.link,
+                      'mr-8 cursor-pointer font-medium text-black'
+                    )}
                     href={'/#tech'}
                   >
                     Tech-stack
@@ -117,6 +128,13 @@ const Navbar: FC<NavbarProps> = ({}) => {
           onClick={() => setDropdownVisible(!dropdownVisible)}
         >
           About
+        </Link>
+        <Link
+          className="mr-4 cursor-pointer h-10 font-medium hover:font-bold"
+          href={'/#work'}
+          onClick={() => setDropdownVisible(!dropdownVisible)}
+        >
+          Work
         </Link>
         <Link
           className="mr-4 cursor-pointer h-10 font-medium hover:font-bold"
