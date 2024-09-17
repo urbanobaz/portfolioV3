@@ -118,7 +118,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
       <div
         className={cn(
           styles.dropdownContainer,
-          'flex flex-col px-10 w-full pt-3 bg-blue-50',
+          'flex flex-col px-10 w-full pt-3 bg-white',
           !dropdownVisible && styles.disabled
         )}
       >

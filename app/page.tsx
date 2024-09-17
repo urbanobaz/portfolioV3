@@ -154,7 +154,7 @@ export default function Home() {
             Finance that fell in love with computer science when I took{' '}
             <a
               href="https://cs50.harvard.edu/x/2023/"
-              className="text-blue-600 hover:font-medium"
+              className="text-black underline underline-offset-4 hover:font-medium"
             >
               CS50x
             </a>
@@ -164,7 +164,7 @@ export default function Home() {
             In 2019 I started working as Teaching Fellow with the{' '}
             <a
               href="https://mdcthereporter.com/the-idea-center-to-offer-computer-science-masterclass-cs50x-miami/"
-              className="text-blue-600 hover:font-medium"
+              className="text-black underline underline-offset-4 hover:font-medium"
             >
               CS50x
             </a>{' '}
@@ -177,7 +177,7 @@ export default function Home() {
             In 2021 I got my first role as a software engineer with{' '}
             <a
               href="https://gohopscotch.com/"
-              className="text-blue-600 hover:font-medium"
+              className="text-black underline underline-offset-4 hover:font-medium"
             >
               Hopscotch
             </a>{' '}
