@@ -2,6 +2,7 @@ import './globals.css';
 import { Quicksand } from 'next/font/google';
 
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const quicksand = Quicksand({ subsets: ['latin'] });
 
@@ -24,6 +25,7 @@ export default function RootLayout({
       <body className={quicksand.className}>
         {children}
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
